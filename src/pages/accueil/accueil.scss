@@ -1,0 +1,183 @@
+.page_accueil{
+  padding:48px;
+  height:calc(100vh - 75px);
+  overflow: hidden;
+  &_header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &_title_add{
+          display: flex;
+          align-items: center;
+          h1{
+              font-size: 32px;
+              font-weight: 700;
+          }
+          button{
+              margin-left: 24px;
+          }
+      }
+      &_search{
+          display: flex;
+          align-items: center;
+          &_input{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding:16px 24px;
+              border-radius: 30px;
+              background:rgba(202,203,223, 0.5);
+              input{
+                  background: transparent;
+                  margin-left: 12px;
+                  color:rgba(23,28,59, 0.6);
+                  caret-color: rgba(23,28,59, 0.6);
+                  &::placeholder{
+                      color:rgba(23,28,59, 0.6);
+                  }
+              }
+          }
+          &_filter{
+              background:rgba(202,203,223, 0.5);
+              padding:8px;
+              margin-left: 8px;
+          }
+      }
+  }
+  &_projets{
+      display: flex;
+      flex-wrap: wrap;
+      align-content:flex-start;
+      overflow-y: scroll;
+      height:calc(100% - 48px);
+      margin-top: 48px;
+      padding-bottom:48px;
+      .projet{
+          width:calc(100%/3 - 16px);
+          border: 1px solid #E5E5EF;
+          border-radius: 16px;
+          margin-right: 24px;
+          margin-bottom: 24px;
+          padding:16px 16px 24px 16px;
+          &:nth-child(3n){
+              margin-right: 0;
+          }
+          &_name_status{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              h4{
+                  font-weight: 700;
+              }
+              span{
+                  padding: 8px 10px;
+                  border-radius: 30px;
+                  background-color: #8C8EB5;
+                  color:white;
+                  font-size: 12px;
+                  &.a-faire {
+                      background-color: #8C8EB5;
+                  }
+                  &.termine {
+                      background-color: #22C55E;
+                  }
+                  &.ferme {
+                      background-color: #EF4444;
+                  }
+                  &.en-pause {
+                      background-color: #FBBF24;
+                  }
+                  &.en-cours {
+                      background-color: #3B82F6;
+                  }
+              }
+          }
+          &_teacher_tournage{
+              display: flex;
+              flex-direction: column;
+              margin-top: 16px;
+              span{
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 8px;
+                  img{
+                      margin-right: 8px;
+                  }
+                  &:last-child{
+                      margin-bottom: 0;
+                  }
+              }
+          }
+      }
+  }
+}
+
+.page_accueil_header_title_add {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    margin-right: 16px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .button_new_projet {
+    padding: 16px 24px;
+    border-radius: 30px;
+    background: #B43FA4;
+    color: white !important;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+}
+
+
+/* Dans votre fichier accueil.scss ou tout autre fichier CSS associé */
+
+.filter-window {
+  position: absolute;
+  top: 180px;
+  right: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #ffffff; /* Fond blanc */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Alignement vertical */
+  }
+  
+  .filter-window label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold; /* Mettre le texte en gras */
+  }
+  
+  .filter-window input[type='checkbox'] {
+  margin-right: 5px;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #cccccc;
+  border-radius: 4px; /* Bord arrondi */
+  cursor: pointer;
+  outline: none;
+  background-color: #ffffff; /* Fond blanc */
+  display: flex; /* Centrer le contenu */
+  justify-content: center; /* Centrer le contenu */
+  align-items: center; /* Centrer le contenu */
+  }
+  
+  .filter-window input[type='checkbox']:checked:before {
+  content: '✕'; /* Caractère de la croix (vous pouvez également utiliser une image ici) */
+  font-size: 12px; /* Taille de la croix */
+  color: #000000; /* Couleur de la croix */
+  }
+  
+  /* Styliser les textes des filtres */
+  .filter-window label {
+  color: #333333;
+  font-size: 14px;
+  }
+  

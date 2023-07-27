@@ -1,0 +1,80 @@
+.page_login {
+  position: relative;
+}
+
+.page_login_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.page_login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(38, 48, 105, 0.6);
+}
+
+.page_login_form_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  background: #161c3d;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.page_login_form_content img {
+  width: 250px;
+  margin-bottom: 24px;
+  max-width: 100%;
+}
+
+.page_login_form_content h2 {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+
+.page_login_form_content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.page_login_form_content form input,
+.page_login_form_content form button {
+  margin-top: 24px;
+}
+
+.page_login_form_content form input {
+  padding: 16px 24px;
+  border-radius: 30px;
+  width: 100%;
+  background: #263069;
+  caret-color: white;
+  color: white;
+}
+
+
+.error-message {
+  color: #ffffff;
+  margin-top: 1rem; /* Ajoutez une marge pour espacer le message d'erreur */
+
+  @media screen and (max-width: 768px) {
+    white-space: nowrap; /* Empêche le texte de se retourner à la ligne */
+  }
+}
+

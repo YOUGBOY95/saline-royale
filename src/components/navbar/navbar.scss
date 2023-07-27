@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    padding: 24px 48px;
+    background: #161c3d;
+  
+    @media screen and (max-width: 768px) {
+      height: 60px;
+      padding: 16px 24px;
+    }
+  
+    .active {
+      opacity: 1;
+    }
+  
+    &_logo {
+      img {
+        height: 35px;
+        object-fit: cover;
+      }
+    }
+  
+    &_link {
+      display: flex;
+  
+      a {
+        display: flex;
+        color: white;
+        margin-right: 24px;
+        opacity: 0.5;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+  
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  
+    &_profil {
+      display: flex;
+      align-items: center;
+  
+      &_button {
+        display: flex;
+  
+        button,
+        a {
+          background: #263069;
+          padding: 8px;
+          border-radius: 50px;
+          margin-left: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          &:last-child {
+            margin-right: 0;
+          }
+  
+          img {
+            object-fit: cover;
+            height: 16px;
+            width: 16px;
+          }
+        }
+      }
+  
+      &_infos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+  
+        span {
+          color: rgb(170, 170, 170);
+  
+          &:first-child {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+  
+  

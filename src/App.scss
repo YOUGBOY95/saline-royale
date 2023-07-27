@@ -1,0 +1,58 @@
+button {
+  padding: 16px 24px;
+  border-radius: 30px;
+  background: #B43FA4;
+  color: white !important;
+  margin-left: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+
+.popup{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding:48px;
+  background: #fff;
+  border: 1px solid #E5E5EF;
+  border-radius: 16px;
+  box-shadow: 0px 2px 8px 0px rgba(15, 23, 42, 0.10);
+  z-index: 9999;
+  width: 350px;
+  &_buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      button{
+          background: #B43FA4 !important;
+          margin-top: 16px;
+          padding:12px 14px !important;
+          &:last-child{
+              margin-left: 0;
+          }
+      }
+  }
+  form{
+      textarea, input{
+          margin-top: 16px;
+          border: 1px solid #E5E5EF;
+          border-radius: 16px;
+          width: 100%;
+          padding:12px;
+      }
+      
+  }
+}

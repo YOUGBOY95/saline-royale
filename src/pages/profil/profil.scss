@@ -1,0 +1,99 @@
+.page_profil {
+  padding: 48px;
+  height: calc(100vh - 75px);
+  overflow: hidden;
+
+  h1 {
+    margin-bottom: 48px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &_infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 48px;
+    height: calc(100% - 24px);
+    overflow-y: scroll;
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 24px;
+    }
+
+    &_name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 750px;
+      padding: 32px;
+      border: 1px solid #E5E5EF;
+      border-radius: 16px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 24px;
+      }
+
+      &_img {
+        margin-right: 16px;
+
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      &_text {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          &:last-child {
+            margin-top: 4px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    &_role,
+    &_mail_mdp {
+      width: 750px;
+      padding: 32px;
+      border: 1px solid #E5E5EF;
+      border-radius: 16px;
+      margin-top: 24px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 24px;
+      }
+
+      &_top {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+      }
+
+      &_bottom {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 24px;
+
+        span {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
